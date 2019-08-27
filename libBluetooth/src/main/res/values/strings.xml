@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">libBluetooth</string>
+    <string name="link_success_tip">连接设备成功，请选择设备感应距离</string>
+    <string name="_0_1m">0.1m</string>
+    <string name="_0_3m">0.3m</string>
+    <string name="_0_5m">0.5m</string>
+    <string name="_1_0m">1.0m</string>
+    <string name="sure">确定</string>
+</resources>

@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.baidu.tts" >
+
+    <!-- 使用蓝牙所需要的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" /> <!-- 使用扫描和设置蓝牙的权限（申明这一个权限必须申明上面一个权限） -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
+    <uses-feature android:name="android.hardware.location.gps" /> <!-- 模糊定位权限，仅作用于6.0+ -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 精准定位权限，仅作用于6.0+ -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+   <application>
+       <service
+           android:name=".service.BluetoothLeService"
+           android:enabled="true"
+           android:exported="true"
+           android:permission="com.baidu.tts" />
+       <service
+           android:name=".service.BluetoothManagerService"
+           android:enabled="true" />
+
+       <activity android:name=".ui.BluetoothDeviceListActivity" />
+   </application>
+</manifest>

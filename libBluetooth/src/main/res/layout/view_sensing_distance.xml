@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:textSize="@dimen/sp_18"
+        android:textStyle="bold"
+        android:text="@string/link_success_tip"
+        android:textColor="@android:color/black" />
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:textColor="@android:color/black"
+            android:padding="@dimen/dp_7"
+            android:id="@+id/radioButton_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_0_1m"
+            android:checked="true"/>
+
+        <RadioButton
+            android:textColor="@android:color/black"
+            android:padding="@dimen/dp_7"
+            android:id="@+id/radioButton_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_0_3m" />
+
+        <RadioButton
+            android:textColor="@android:color/black"
+            android:padding="@dimen/dp_7"
+            android:id="@+id/radioButton_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_0_5m" />
+        <RadioButton
+            android:textColor="@android:color/black"
+            android:padding="@dimen/dp_7"
+            android:id="@+id/radioButton_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_0m" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/sure"
+        android:layout_margin="@dimen/sp_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sure"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_16"
+        android:background="@drawable/dialog_rbtn_bg_f45531"/>
+</LinearLayout>
